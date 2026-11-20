@@ -1,0 +1,62 @@
+:root {
+  --t-yellow: #ffdd2d;
+  --t-yellow-deep: #f5c400;
+  --t-yellow-soft: #fff4a8;
+  --t-black: #111111;
+  --t-ink: #1c1c1c;
+  --t-muted: #6b6b6b;
+  --t-line: rgba(17, 17, 17, 0.08);
+  --t-surface: #ffffff;
+  --t-bg: #f3f4f6;
+  --t-green: #1a9f5b;
+  --t-red: #e5484d;
+  --phone-w: 390px;
+  --phone-h: 844px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --font-display: "Unbounded", sans-serif;
+  --font-ui: "Manrope", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-ui);
+  color: var(--t-ink);
+  background: var(--t-black);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
